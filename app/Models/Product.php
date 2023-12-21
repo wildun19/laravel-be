@@ -27,7 +27,7 @@ class Product extends Model
         return $query->where('category_id', 'LIKE', '%' . $categoryId . '%')
             ->where('user_id', 'LIKE', '%' . $userId . '%');
     }
-
+    
     // public function scopeUserId(Builder $query, string $userId): Builder
     // {
     //     return $query->where('user_id', 'LIKE', '%' . $userId . '%');
